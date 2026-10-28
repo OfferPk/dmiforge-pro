@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640">
+  <defs>
+    <linearGradient id="uiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="100%" stop-color="#0d1422"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#162238"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="640" fill="url(#uiBg)"/>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="0" y="0" width="1000" height="55" fill="url(#headerGrad)" stroke="#1e2d48" stroke-width="1"/>
+  <circle cx="25" cy="27" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="27" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="27" r="6" fill="#10b981"/>
+
+  <text x="95" y="33" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="700" fill="#ffffff">📹 DMIForge Pro — CCSDS 766.1-B Digital Motion Imagery Studio</text>
+  <rect x="740" y="16" width="130" height="24" rx="4" fill="rgba(0, 229, 255, 0.15)" stroke="#00e5ff" stroke-width="1"/>
+  <text x="805" y="32" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#00e5ff" text-anchor="middle">10/10 PASS CERTIFIED</text>
+
+  <!-- Metric Badges -->
+  <g transform="translate(30, 75)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="220" height="65" rx="6" fill="#141d2e" stroke="#22324e"/>
+    <text x="15" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Active Space Video Feed</text>
+    <text x="15" y="52" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#10b981">1080p @ 30 FPS</text>
+
+    <!-- Card 2 -->
+    <rect x="240" y="0" width="220" height="65" rx="6" fill="#141d2e" stroke="#22324e"/>
+    <text x="255" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">GOP Cadence Constraint</text>
+    <text x="255" y="52" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#00e5ff">GOP &le; 30 (Closed)</text>
+
+    <!-- Card 3 -->
+    <rect x="480" y="0" width="220" height="65" rx="6" fill="#141d2e" stroke="#22324e"/>
+    <text x="495" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Audio & Telemetry Sync</text>
+    <text x="495" y="52" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#38bdf8">AAC / KLV Locked</text>
+
+    <!-- Card 4 -->
+    <rect x="720" y="0" width="220" height="65" rx="6" fill="#141d2e" stroke="#22324e"/>
+    <text x="735" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">RFC 2250 RTP Packaging</text>
+    <text x="735" y="52" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#f59e0b">7 TS / UDP (1316 B)</text>
+  </g>
+
+  <!-- Left: Spacecraft Viewport & Camera HUD -->
+  <g transform="translate(30, 160)">
+    <rect x="0" y="0" width="550" height="450" rx="8" fill="#0c1322" stroke="#1c2b42" stroke-width="1.5"/>
+    <rect x="0" y="0" width="550" height="35" rx="8" fill="#141f33"/>
+    <text x="20" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Lunar Gateway Optical Gimbal Camera Viewport</text>
+
+    <!-- Video Canvas Mockup -->
+    <rect x="15" y="50" width="520" height="260" rx="6" fill="#020408" stroke="#00e5ff" stroke-width="1"/>
+    <!-- Moon surface silhouette -->
+    <circle cx="260" cy="180" r="85" fill="#1e293b"/>
+    <circle cx="230" cy="160" r="15" fill="#0f172a"/>
+    <circle cx="280" cy="190" r="22" fill="#0f172a"/>
+    <circle cx="270" cy="140" r="10" fill="#0f172a"/>
+    <!-- Crosshairs -->
+    <circle cx="260" cy="180" r="45" fill="none" stroke="rgba(0, 229, 255, 0.5)" stroke-dasharray="4,4"/>
+    <line x1="260" y1="120" x2="260" y2="240" stroke="rgba(0, 229, 255, 0.3)"/>
+    <line x1="200" y1="180" x2="320" y2="180" stroke="rgba(0, 229, 255, 0.3)"/>
+
+    <!-- HUD text -->
+    <text x="30" y="75" font-family="JetBrains Mono, monospace" font-size="10" fill="#00e5ff">TARGET: ARTEMIS II LUNAR ORBIT</text>
+    <text x="30" y="90" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">STREAM: H.264 AVC (PID 0x1011)</text>
+    <text x="30" y="105" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">GOP: 30 | IDR CADENCE: 1.0 SEC</text>
+
+    <text x="360" y="75" font-family="JetBrains Mono, monospace" font-size="10" fill="#00e5ff">UTC: 2026-10-20T03:45:00Z</text>
+    <text x="360" y="90" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">PTS: 894000 (90 kHz)</text>
+    <text x="360" y="105" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">PCR: 268200000 (27 MHz)</text>
+
+    <text x="30" y="295" font-family="JetBrains Mono, monospace" font-size="10" fill="#a7f3d0">SUB-SAT: 28.5729° N, 80.6490° W | ALT: 408.2 KM</text>
+
+    <!-- Dissector mini table -->
+    <rect x="15" y="325" width="520" height="110" rx="4" fill="#060912" stroke="#1e2d48"/>
+    <text x="25" y="345" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#38bdf8">MPEG-2 Transport Stream PID Multiplexer State:</text>
+    <text x="25" y="365" font-family="JetBrains Mono, monospace" font-size="10" fill="#cbd5e1">• PAT (PID 0x0000): Pointing Program 1 -> PMT PID 0x1000 (CRC-32 Valid)</text>
+    <text x="25" y="380" font-family="JetBrains Mono, monospace" font-size="10" fill="#cbd5e1">• PMT (PID 0x1000): Video 0x1011 (AVC), Audio 0x1012 (AAC), KLV 0x1013</text>
+    <text x="25" y="395" font-family="JetBrains Mono, monospace" font-size="10" fill="#cbd5e1">• Audio 0x1012: AAC-LC 48 kHz Aerospace Audio Stream (Synchronous PTS)</text>
+    <text x="25" y="410" font-family="JetBrains Mono, monospace" font-size="10" fill="#cbd5e1">• KLV 0x1013: SMPTE RP 210 Ephemeris Metadata (Microsecond Coupled)</text>
+  </g>
+
+  <!-- Right: RFC 2250 RTP Encapsulation & Audit Preview -->
+  <g transform="translate(600, 160)">
+    <rect x="0" y="0" width="370" height="450" rx="8" fill="#0c1322" stroke="#1c2b42" stroke-width="1.5"/>
+    <rect x="0" y="0" width="370" height="35" rx="8" fill="#141f33"/>
+    <text x="20" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#ffffff">RFC 2250 RTP Packetizer (§3.6.1)</text>
+
+    <!-- Code Block -->
+    <rect x="15" y="50" width="340" height="240" rx="4" fill="#060912" stroke="#1e2d48"/>
+    <text x="25" y="75" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">{</text>
+    <text x="35" y="95" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"protocol": <tspan fill="#34d399">"RFC 2250 / RFC 3550"</tspan>,</text>
+    <text x="35" y="115" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"payload_type": <tspan fill="#f59e0b">33</tspan> <tspan fill="#64748b">(MP2T)</tspan>,</text>
+    <text x="35" y="135" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"ts_count": <tspan fill="#f59e0b">7</tspan> <tspan fill="#64748b">(Strictly 7 Packets)</tspan>,</text>
+    <text x="35" y="155" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"ts_payload_bytes": <tspan fill="#38bdf8">1316</tspan> <tspan fill="#64748b">(7 x 188)</tspan>,</text>
+    <text x="35" y="175" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"rtp_header_bytes": <tspan fill="#38bdf8">12</tspan>,</text>
+    <text x="35" y="195" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"total_udp_datagram": <tspan fill="#10b981">1328</tspan> <tspan fill="#64748b">(&lt; 1500 MTU)</tspan>,</text>
+    <text x="35" y="215" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"mtu_safety": <tspan fill="#10b981">"ZERO_FRAGMENTATION"</tspan>,</text>
+    <text x="35" y="235" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"space_link_vc": <tspan fill="#34d399">"AOS VC-3 (Video Priority)"</tspan></text>
+    <text x="25" y="255" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">}</text>
+
+    <!-- Operational Verdict -->
+    <rect x="15" y="305" width="340" height="130" rx="4" fill="#064e3b" stroke="#10b981"/>
+    <text x="25" y="330" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#ffffff">COMPLIANCE AUDIT VERDICT:</text>
+    <text x="25" y="352" font-family="JetBrains Mono, monospace" font-size="10" fill="#a7f3d0">• Status: CCSDS_766_1_DMI_CERTIFIED</text>
+    <text x="25" y="370" font-family="JetBrains Mono, monospace" font-size="10" fill="#a7f3d0">• Normative Score: 10/10 PASS (100.0%)</text>
+    <text x="25" y="388" font-family="JetBrains Mono, monospace" font-size="10" fill="#a7f3d0">• Closed-GOP Rapid Recovery Verified</text>
+    <text x="25" y="406" font-family="JetBrains Mono, monospace" font-size="10" fill="#a7f3d0">• Ready for Flight Video & Ground Demux</text>
+  </g>
+</svg>
